@@ -11,6 +11,7 @@ import {
     TextureDataType,
     TextureEncoding,
 } from '../constants';
+import { OffscreenCanvas } from '../renderers/WebGLRenderer';
 
 export class Texture extends EventDispatcher {
     /**
@@ -26,7 +27,7 @@ export class Texture extends EventDispatcher {
      * @param [encoding=THREE.LinearEncoding]
      */
     constructor(
-        image?: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
+        image?: TexImageSource | OffscreenCanvas,
         mapping?: Mapping,
         wrapS?: Wrapping,
         wrapT?: Wrapping,
