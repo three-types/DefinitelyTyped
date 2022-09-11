@@ -11,7 +11,10 @@ import {
     TextureDataType,
     TextureEncoding,
 } from '../constants';
-import { OffscreenCanvas } from '../renderers/WebGLRenderer';
+
+/** Shim for OffscreenCanvas. */
+// tslint:disable-next-line:no-empty-interface
+export interface OffscreenCanvas extends EventTarget {}
 
 export class Texture extends EventDispatcher {
     /**

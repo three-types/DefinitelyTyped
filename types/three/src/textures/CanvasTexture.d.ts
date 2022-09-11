@@ -1,6 +1,5 @@
-import { Texture } from './Texture';
+import { OffscreenCanvas, Texture } from './Texture';
 import { Mapping, Wrapping, TextureFilter, PixelFormat, TextureDataType } from '../constants';
-import { OffscreenCanvas } from '../renderers/WebGLRenderer';
 
 export class CanvasTexture extends Texture {
     /**
